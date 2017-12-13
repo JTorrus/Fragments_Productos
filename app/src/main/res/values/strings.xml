@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">Fragments_JTorrus</string>
+    <string name="app_name">ListViews_Adapters_JTorrus</string>
+    <string name="title_of_spinner">Select quantity</string>
+    <string name="name_of_images">smartphone</string>
+    <string name="name_type_of_images">drawable</string>
+    <string name="activity_messageOK">Purchase successful</string>
+    <string name="activity_messageKO">Purchase cancelled</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+
+    <string-array name="names_of_items">
+        <item>Samsung Galaxy S8</item>
+        <item>iPhone X</item>
+        <item>Razer Phone</item>
+        <item>Google Pixel 2</item>
+        <item>Huawei Mate 10</item>
+        <item>Xiaomi Mi6</item>
+        <item>Meizu Pro 7</item>
+        <item>Xiamoi M2</item>
+        <item>iPhone 8</item>
+        <item>Samsung Galaxy S7 edge</item>
+        <item>BQ Aquarius</item>
+        <item>Huawei P10</item>
+        <item>iPhone 7S</item>
+    </string-array>
 </resources>
