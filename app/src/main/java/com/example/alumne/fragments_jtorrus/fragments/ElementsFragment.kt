@@ -8,19 +8,19 @@ import android.view.ViewGroup
 import com.example.alumne.fragments_jtorrus.R
 import com.example.alumne.fragments_jtorrus.model.Smartphone
 import com.example.alumne.fragments_jtorrus.model.SmartphoneAdapter
-import kotlinx.android.synthetic.main.fragment_product.*
+import kotlinx.android.synthetic.main.frag_elements.*
 
 class ElementsFragment : Fragment() {
     private var smartphoneList: ArrayList<Smartphone> = ArrayList()
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        return inflater!!.inflate(R.layout.fragment_product, container, false)
+        return inflater!!.inflate(R.layout.frag_elements, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         getData()
-        smartphoneListView.adapter = SmartphoneAdapter(this.activity, smartphoneList, R.layout.list_item)
+        smartphoneListView.adapter = SmartphoneAdapter(this.activity, smartphoneList, R.layout.list_elements)
     }
 
     override fun onStart() {
@@ -30,9 +30,10 @@ class ElementsFragment : Fragment() {
     private fun getData() {
         val smartphoneStocks = resources.getIntArray(R.array.stocks_of_items)
         val smartphoneLabels = resources.getStringArray(R.array.names_of_items)
+        val smartphoneDescs = resources.getStringArray(R.array.desc_of_items)
 
         for (key in 0 until smartphoneLabels.size) {
-            val element = Smartphone(smartphoneLabels[key], smartphoneStocks[key], resources.getIdentifier("smartphone", "drawable", this.activity.packageName))
+            val element = Smartphone(smartphoneLabels[key], smartphoneStocks[key], resources.getIdentifier("smartphone", "drawable", this.activity.packageName), smartphoneDescs[key])
             smartphoneList.add(element)
         }
     }

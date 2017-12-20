@@ -23,4 +23,20 @@
         <item>Huawei P10</item>
         <item>iPhone 7S</item>
     </string-array>
+
+    <string-array name="desc_of_items">
+        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem consectetur, consequatur cumque, deserunt dignissimos ea eius error et fuga laborum quidem ratione repellendus repudiandae sapiente soluta, suscipit? Quasi, repellat.</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis consequatur delectus, dignissimos dolore dolores eos esse est facilis in maiores odio perferendis qui, reprehenderit, ut. Ab perspiciatis sint sunt!</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores atque corporis dolor dolore dolorem eligendi in ipsam maxime minima nesciunt nostrum pariatur perferendis perspiciatis porro, quod quos ullam unde!</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, deleniti, dolor! Accusantium aperiam aut autem dolor doloribus esse fugiat iste maxime officiis voluptatum. Alias earum, iste iusto labore officia qui?</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut blanditiis deserunt esse impedit iure laborum modi nemo nobis numquam optio pariatur quae quaerat quia, quis quisquam repellendus saepe, vitae!</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur at atque aut blanditiis, culpa dolorem earum error excepturi illum incidunt inventore laborum non perferendis quasi rem similique totam vel.</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto at corporis cumque cupiditate debitis distinctio dolor esse fugiat illo impedit ipsum nostrum quis quo reiciendis repellendus, repudiandae saepe veritatis.</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolorem doloremque eius eligendi incidunt itaque minima odit similique suscipit ullam. Ad amet atque autem, culpa inventore mollitia porro repellat reprehenderit.</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequuntur culpa cum dolorem, dolores et hic illum nisi nobis officia provident quae qui quibusdam quod tempore, velit voluptatem voluptates voluptatum.</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, aut culpa cupiditate dolore dolores, et ipsa minus molestiae mollitia nulla officia omnis perspiciatis quaerat quo recusandae reprehenderit sed voluptatibus voluptatum!</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur delectus earum eos harum illum molestiae placeat quisquam recusandae voluptates. Aliquid impedit molestias neque nostrum quas! Officia omnis quis vel.</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae corporis cum debitis eligendi error, exercitationem, facilis fuga illo impedit itaque magnam modi non provident quia quis rem saepe, tempore!</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut commodi doloribus ex ipsam iste laboriosam minus odit. Adipisci alias eius expedita fuga fugit minima, necessitatibus reprehenderit voluptatem. Alias, ea!</item>
+    </string-array>
 </resources>

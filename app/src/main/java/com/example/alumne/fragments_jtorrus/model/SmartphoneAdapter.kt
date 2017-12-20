@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import kotlinx.android.synthetic.main.list_item.view.*
+import kotlinx.android.synthetic.main.list_elements.view.*
 
 class SmartphoneAdapter(context: Context, var smartphoneList: ArrayList<Smartphone>, var itemLayout: Int): BaseAdapter() {
     private var inflater: LayoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater

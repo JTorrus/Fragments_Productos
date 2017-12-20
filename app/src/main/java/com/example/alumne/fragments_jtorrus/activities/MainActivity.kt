@@ -12,11 +12,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val fragmentManager: android.support.v4.app.FragmentManager = supportFragmentManager
-        val fragmentTrans: android.support.v4.app.FragmentTransaction = fragmentManager.beginTransaction()
+        val fragmentTransaction: android.support.v4.app.FragmentTransaction = fragmentManager.beginTransaction()
 
         val elementsFragment = ElementsFragment()
-        fragmentTrans.add(R.id.containerPanel, elementsFragment)
+        fragmentTransaction.add(R.id.containerPanel, elementsFragment)
 
-        fragmentTrans.commit()
+        fragmentTransaction.commit()
     }
 }
