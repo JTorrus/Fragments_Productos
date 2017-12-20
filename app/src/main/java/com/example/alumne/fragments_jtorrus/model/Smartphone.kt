@@ -3,7 +3,7 @@ package com.example.alumne.fragments_jtorrus.model
 import android.os.Parcel
 import android.os.Parcelable
 
-class Smartphone(internal var name: String, internal var stock: Int, internal var img: Int): Parcelable {
+class Smartphone(var name: String, var stock: Int, var img: Int): Parcelable {
     constructor(parcel: Parcel) : this(
             parcel.readString(),
             parcel.readInt(),
