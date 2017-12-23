@@ -6,13 +6,14 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import com.example.alumne.fragments_jtorrus.R
 import com.example.alumne.fragments_jtorrus.interfaces.OnPhoneSelectedListener
 import com.example.alumne.fragments_jtorrus.model.Smartphone
 import com.example.alumne.fragments_jtorrus.model.SmartphoneAdapter
 import kotlinx.android.synthetic.main.frag_elements.*
 
-class ElementsFragment : Fragment() {
+class ElementsFragment : Fragment(), AdapterView.OnItemClickListener {
     private var smartphoneList: ArrayList<Smartphone> = ArrayList()
     private lateinit var mCallback: OnPhoneSelectedListener
 
@@ -20,10 +21,15 @@ class ElementsFragment : Fragment() {
         return inflater!!.inflate(R.layout.frag_elements, container, false)
     }
 
+    override fun onItemClick(adapterView: AdapterView<*>?, view: View?, position: Int, id: Long) {
+        mCallback.onPhoneSelected(smartphoneList[position])
+    }
+
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         getData()
         smartphoneListView.adapter = SmartphoneAdapter(this.activity, smartphoneList, R.layout.list_elements)
+        smartphoneListView.onItemClickListener = this
     }
 
     override fun onAttach(context: Context?) {
