@@ -1,17 +1,26 @@
 package com.example.alumne.fragments_jtorrus.fragments
 
+import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.alumne.fragments_jtorrus.R
+import com.example.alumne.fragments_jtorrus.interfaces.OnPhoneSelectedListener
 import com.example.alumne.fragments_jtorrus.model.Smartphone
 import kotlinx.android.synthetic.main.frag_single_element.*
 
 class SingleElementFragment : Fragment() {
+    private lateinit var mCallback: OnPhoneSelectedListener
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+    }
+
+    override fun onAttach(context: Context?) {
+        super.onAttach(context)
+        mCallback = context as OnPhoneSelectedListener
     }
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
