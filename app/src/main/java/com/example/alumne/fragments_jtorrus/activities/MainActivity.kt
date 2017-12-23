@@ -11,7 +11,7 @@ import com.example.alumne.fragments_jtorrus.model.Smartphone
 
 class MainActivity : AppCompatActivity(), OnPhoneSelectedListener {
     override fun onPhoneSelected(smartphone: Smartphone) {
-        val original: SingleElementFragment = supportFragmentManager.findFragmentById(R.id.single_smartphone_fragment) as SingleElementFragment
+        val original: SingleElementFragment? = supportFragmentManager.findFragmentById(R.id.single_smartphone_fragment) as SingleElementFragment?
         val fragmentTransaction: android.support.v4.app.FragmentTransaction = supportFragmentManager.beginTransaction()
         val singleElementFragment = SingleElementFragment.newInstance(smartphone)
 

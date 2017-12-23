@@ -22,12 +22,14 @@ class SingleElementFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        val data = arguments.getParcelable<Smartphone>("data_smartphone")
 
-        single_image_of_item.setImageResource(data.img)
-        single_name_of_item.text = data.name
-        single_stock_of_item.text = data.stock.toString()
-        single_desc_of_item.text = data.desc
+        if (arguments != null) {
+            val data = arguments.getParcelable<Smartphone>("data_smartphone")
+            single_image_of_item.setImageResource(data.img)
+            single_name_of_item.text = data.name
+            single_stock_of_item.text = data.stock.toString()
+            single_desc_of_item.text = data.desc
+        }
     }
 
     companion object {

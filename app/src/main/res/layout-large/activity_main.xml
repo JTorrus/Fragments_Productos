@@ -6,14 +6,14 @@
     <fragment
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:name="com.example.alumne.fragments_jtorrus.fragments.SingleElementFragment"
+        android:name="com.example.alumne.fragments_jtorrus.fragments.ElementsFragment"
         android:id="@+id/smartphone_list_fragment"
         android:layout_weight="2"/>
 
     <fragment
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:name="com.example.alumne.fragments_jtorrus.fragments.ElementsFragment"
+        android:name="com.example.alumne.fragments_jtorrus.fragments.SingleElementFragment"
         android:id="@+id/single_smartphone_fragment"
         android:layout_weight="4" />
 
