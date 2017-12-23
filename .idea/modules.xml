@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Fragments_JTorrus.iml" filepath="$PROJECT_DIR$/Fragments_JTorrus.iml" />
+      <module fileurl="file://C:\Users\javyc\Documents\Fragments_Productos\Fragments_JTorrus.iml" filepath="C:\Users\javyc\Documents\Fragments_Productos\Fragments_JTorrus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Fragments_Productos.iml" filepath="$PROJECT_DIR$/.idea/Fragments_Productos.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

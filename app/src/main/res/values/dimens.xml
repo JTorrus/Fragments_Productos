@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="single_size_of_image">190dp</dimen>
+    <dimen name="single_height_of_image">156dp</dimen>
+    <dimen name="single_default_margin">16dp</dimen>
+    <dimen name="single_width_of_textview">121dp</dimen>
+    <dimen name="single_height_of_textview">16dp</dimen>
+    <dimen name="single_margintop_of_textview">56dp</dimen>
+    <dimen name="width_of_description">0dp</dimen>
+    <dimen name="height_of_description">0dp</dimen>
+    <dimen name="description_margin">8dp</dimen>
+    <dimen name="margintop_description">24dp</dimen>
+</resources>

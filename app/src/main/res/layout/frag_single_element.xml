@@ -1,26 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/single_image_of_item"
-        android:layout_width="@dimen/size_of_image_item"
-        android:layout_height="@dimen/size_of_image_item" />
+        android:layout_width="@dimen/single_size_of_image"
+        android:layout_height="@dimen/single_height_of_image"
+        android:layout_marginStart="@dimen/single_default_margin"
+        android:layout_marginTop="@dimen/single_default_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/single_name_of_item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="@dimen/single_width_of_textview"
+        android:layout_height="@dimen/single_height_of_textview"
+        android:layout_marginTop="@dimen/single_margintop_of_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/single_image_of_item"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/single_stock_of_item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="@dimen/single_width_of_textview"
+        android:layout_height="@dimen/single_height_of_textview"
+        android:layout_marginTop="@dimen/single_margintop_of_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/single_image_of_item"
+        app:layout_constraintTop_toBottomOf="@+id/single_name_of_item" />
 
     <TextView
         android:id="@+id/single_desc_of_item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
+        android:layout_width="@dimen/width_of_description"
+        android:layout_height="@dimen/height_of_description"
+        android:layout_marginBottom="@dimen/description_margin"
+        android:layout_marginEnd="@dimen/description_margin"
+        android:layout_marginStart="@dimen/description_margin"
+        android:layout_marginTop="@dimen/margintop_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/single_image_of_item" />
 </android.support.constraint.ConstraintLayout>

@@ -4,8 +4,14 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.alumne.fragments_jtorrus.R
 import com.example.alumne.fragments_jtorrus.fragments.ElementsFragment
+import com.example.alumne.fragments_jtorrus.fragments.SingleElementFragment
+import com.example.alumne.fragments_jtorrus.interfaces.OnPhoneSelectedListener
+import com.example.alumne.fragments_jtorrus.model.Smartphone
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), OnPhoneSelectedListener {
+    override fun onPhoneSelected(smartphone: Smartphone) {
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
