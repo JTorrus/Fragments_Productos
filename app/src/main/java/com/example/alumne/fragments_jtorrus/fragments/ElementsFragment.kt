@@ -37,18 +37,17 @@ class ElementsFragment : Fragment(), AdapterView.OnItemClickListener {
         mCallback = context as OnPhoneSelectedListener
     }
 
-    override fun onStart() {
-        super.onStart()
-    }
-
     private fun getData() {
         val smartphoneStocks = resources.getIntArray(R.array.stocks_of_items)
         val smartphoneLabels = resources.getStringArray(R.array.names_of_items)
         val smartphoneDescs = resources.getStringArray(R.array.desc_of_items)
 
-        for (key in 0 until smartphoneLabels.size) {
+        /*for (key in 0 until smartphoneLabels.size) {
             val element = Smartphone(smartphoneLabels[key], smartphoneStocks[key], resources.getIdentifier("smartphone", "drawable", this.activity.packageName), smartphoneDescs[key])
             smartphoneList.add(element)
-        }
+        }*/
+        (0 until smartphoneLabels.size)
+                .map { Smartphone(smartphoneLabels[it], smartphoneStocks[it], resources.getIdentifier("smartphone", "drawable", this.activity.packageName), smartphoneDescs[it]) }
+                .forEach { hola -> smartphoneList.add(hola) }
     }
 }
