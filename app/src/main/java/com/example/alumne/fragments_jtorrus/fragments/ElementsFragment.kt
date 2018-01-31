@@ -48,6 +48,6 @@ class ElementsFragment : Fragment(), AdapterView.OnItemClickListener {
         }*/
         (0 until smartphoneLabels.size)
                 .map { Smartphone(smartphoneLabels[it], smartphoneStocks[it], resources.getIdentifier("smartphone", "drawable", this.activity.packageName), smartphoneDescs[it]) }
-                .forEach { hola -> smartphoneList.add(hola) }
+                .forEach { smartphoneList.add(it) }
     }
 }
